@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>HP-Tacotron2 Audio Samples</title>
+  <style>
+body {
+  margin:0;
+  padding:10px 30px;
+  background: #fff;
+  color: #111;
+  font-size: 17px;
+  font-family: sans-serif;
+  font-weight: 400;
+  line-height: 1.8;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  width: 30%;
+  vertical-align: text-top;
+}
+</style>
+ 
+
+</head>
+<center><h1>Joint Learning  For Prosodic Break Presiction and Mel Spectrogram Generation in Chinese Text to Speech </h1></center>
+<body style="width: 94%; margin: 0 auto">
+	<h3 style="text-align: center">Abstract</h3>
+<div style="width: 92%; margin: 0 auto">
+  <p>
+  	&nbsp;&nbsp;&nbsp;&nbsp;Although the end-to-end speech synthesis method, such as Tacotron2, can generate fluently and natural English speech. But there is still suffered from some prosody problem in Chinese speech synthesis, such as the phrase break errors occur frequently when synthesizing long sentences. In this paper, to solve the problem in the mandarin TTS, we propose the HP-Tacotron2, a multi-task framework including the hierarchical prosodic break predictor and Mel-spectrogram generator. We treat the prosody break label as the additional conditioning feature and concatenate it with the encoder’s output to a joint vector for the Mel-spectrogram generation task. By multi-task training strategy, not only improves the prediction performance of the prosody model be improved but also makes the synthesized audio can be made more natural. And further, improve the quality of the multi-task framework, we introduce more efficient syntactic features by syntactic parsing. We evaluate different systems on objective and subjective experiments and the results of the experiment show that the proposed ap-proach outperforms the other systems.
+  </p>
+  <p><b>Intex Term</b> —— end-to-end,phrase break, HP-Tacotron2, multi-task</p>
+</div>
+<div style="width: 90%; margin: 0 auto; margin-top: 100px">
+	<img src="./img/model1.png"  title="HP-Tacotron2 model" alt="HP-Tacotron2 model" style="margin-left: 16%">
+	<img src="./img/model2.png"  title="Prosodic Prediction" alt="Prosodic Prediction" style="margin-left: 100px">
+</div>
+
+	<h1 style="margin-top: 150px">Audio Sapmle</h1>
+	
+<div id="tab">
+	  <table><thead>
+	  <tr>
+	  </tbody></table>
+	  
+	  <hr>
+	  <p style="font-size: 22px">在#1狱中#3，张明宝#1悔恨#1交加#2，写了#1一份#1忏悔书#4。</p>
+
+	  <table><thead>
+	  <tr>
+	  <th style="text-align: center">Baseline</th>
+	  <th style="text-align: center">Baseline-prosody</th>
+	  <th style="text-align: center">FP-Tacotron2</th>
+	  <th style="text-align: center">PP-Tacotron2</th>
+	  <th style="text-align: center">HP-Tacotron2</th>
+	  <th style="text-align: center">GTA</th>
+	  </tr></thead><tbody>
+	  <tr>
+	  <td style="text-align: center"><audio controls="controls" ><source src="./B/wavs/010000.wav" autoplay/></audio></td>
+	  <td style="text-align: center"><audio controls="controls" ><source src="./C/wavs/010000.wav" autoplay/></audio></td>
+	  <td style="text-align: center"><audio controls="controls" ><source src="./FP/wavs/010000.wav"  autoplay/></audio></td>
+	  <td style="text-align: center"><audio controls="controls" ><source src="./PP/wavs/010000.wav" autoplay/></audio></td>
+	  <td style="text-align: center"><audio controls="controls" ><source src="./HP/wavs/010000.wav" autoplay/></audio></td>
+	  <td style="text-align: center"><audio controls="controls" ><source src="./GTA/audio_24k/010000.wav" autoplay/></audio></td>
+	  </tr>
+	  </tbody></table>
+	  
+
+	  <table><thead>
+	    <tr>
+	    
+	    </tbody></table>
+</div>
+<div id="tab">
+	  <table><thead>
+	  <tr>
+	  </tbody></table>
+	  
+	  <hr>
+	  <p style="font-size: 22px">该车#1将#1三人#1撞倒后#3，在#1大雾中#1逃窜#4。</p>
+
+	  <table><thead>
+	  <tr>
+	  <th style="text-align: center">Baseline</th>
+	  <th style="text-align: center">Baseline-prosody</th>
+	  <th style="text-align: center">FP-Tacotron2</th>
+	  <th style="text-align: center">PP-Tacotron2</th>
+	  <th style="text-align: center">HP-Tacotron2</th>
+	  <th style="text-align: center">GTA</th>
+	  </tr></thead><tbody>
+	  <tr>
+		<td style="text-align: center"><audio controls="controls" ><source src="./B/wavs/009990.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./C/wavs/009990.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./FP/wavs/009990.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./PP/wavs/009990.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./HP/wavs/009990.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./GTA/audio_24k/009990.wav" autoplay/></audio></td>
+	  </tr>
+	  </tbody></table>
+	  
+
+	  <table><thead>
+	    <tr>
+	    
+	    </tbody></table>
+</div>
+<div id="tab">
+	  <table><thead>
+	  <tr>
+	  </tbody></table>
+	  
+	  <hr>
+	  <p style="font-size: 22px">因为#3，我们#1所#1发出的#1力量#2必会因#1难度#1加大#1而#1减弱#4</p>
+
+	  <table><thead>
+	  <tr>
+	  <th style="text-align: center">Baseline</th>
+	  <th style="text-align: center">Baseline-prosody</th>
+	  <th style="text-align: center">FP-Tacotron2</th>
+	  <th style="text-align: center">PP-Tacotron2</th>
+	  <th style="text-align: center">HP-Tacotron2</th>
+	  <th style="text-align: center">GTA</th>
+	  </tr></thead><tbody>
+	  <tr>
+		<td style="text-align: center"><audio controls="controls" ><source src="./B/wavs/009960.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./C/wavs/009960.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./FP/wavs/009960.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./PP/wavs/009960.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./HP/wavs/009960.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./GTA/audio_24k/009960.wav" autoplay/></audio></td>
+	  </tr>
+	  </tbody></table>
+	  
+
+	  <table><thead>
+	    <tr>
+	    
+	    </tbody></table>
+</div>
+<div id="tab">
+	  <table><thead>
+	  <tr>
+	  </tbody></table>
+	  
+	  <hr>
+	  <p style="font-size: 22px">据悉#3，奥巴马#1一家人#2对#1这座#1“冬季#1白宫#2”极为#1满意#4。</p>
+
+	  <table><thead>
+	  <tr>
+	  <th style="text-align: center">Baseline</th>
+	  <th style="text-align: center">Baseline-prosody</th>
+	  <th style="text-align: center">FP-Tacotron2</th>
+	  <th style="text-align: center">PP-Tacotron2</th>
+	  <th style="text-align: center">HP-Tacotron2</th>
+	  <th style="text-align: center">GTA</th>
+	  </tr></thead><tbody>
+	  <tr>
+		<td style="text-align: center"><audio controls="controls" ><source src="./B/wavs/009970.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./C/wavs/009970.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./FP/wavs/009970.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./PP/wavs/009970.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./HP/wavs/009970.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./GTA/audio_24k/009970.wav" autoplay/></audio></td>
+	  </tr>
+	  </tbody></table>
+	  
+
+	  <table><thead>
+	    <tr>
+	    
+	    </tbody></table>
+</div>
+<div id="tab">
+	  <table><thead>
+	  <tr>
+	  </tbody></table>
+	  
+	  <hr>
+	  <p style="font-size: 22px">傍晚#2七个#1小人#1回来了#3，白雪#1公主说#3：你们#1就是#1我#1命中的#1七个#1小矮人吧#4。</p>
+
+	  <table><thead>
+	  <tr>
+	  <th style="text-align: center">Baseline</th>
+	  <th style="text-align: center">Baseline-prosody</th>
+	  <th style="text-align: center">FP-Tacotron2</th>
+	  <th style="text-align: center">PP-Tacotron2</th>
+	  <th style="text-align: center">HP-Tacotron2</th>
+	  <th style="text-align: center">GTA</th>
+	  </tr></thead><tbody>
+	  <tr>
+		<td style="text-align: center"><audio controls="controls" ><source src="./B/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./C/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./FP/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./PP/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./HP/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./GTA/audio_24k/009920.wav" autoplay/></audio></td>
+	  </tr>
+	  </tbody></table>
+	  
+
+	  <table><thead>
+	    <tr>
+	    
+	    </tbody></table>
+</div>
+</body>
+</html>
+
