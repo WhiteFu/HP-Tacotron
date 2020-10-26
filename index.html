@@ -30,7 +30,7 @@ img {
 	<h3 style="text-align: center">Abstract</h3>
 <div style="width: 92%; margin: 0 auto">
   <p>
-  	&nbsp;&nbsp;&nbsp;&nbsp;Although the end-to-end speech synthesis method, such as Tacotron2, can generate fluently and natural English speech. But there is still suffered from some prosody problem in Chinese speech synthesis, such as the phrase break errors occur frequently when synthesizing long sentences. In this paper, to solve the problem in the mandarin TTS, we propose the HP-Tacotron2, a multi-task framework including the hierarchical prosodic break predictor and Mel-spectrogram generator. We treat the prosody break label as the additional conditioning feature and concatenate it with the encoder’s output to a joint vector for the Mel-spectrogram generation task. By multi-task training strategy, not only improves the prediction performance of the prosody model be improved but also makes the synthesized audio can be made more natural. And further, improve the quality of the multi-task framework, we introduce more efficient syntactic features by syntactic parsing. We evaluate different systems on objective and subjective experiments and the results of the experiment show that the proposed ap-proach outperforms the other systems.
+  	&nbsp;&nbsp;&nbsp;&nbsp;Tacotron2, can generate fluent and natural English speech,there are still some prosody problems in Chinese speechsynthesis, such as phrase break errors frequently occur when synthesizing long sentences. In this paper, we propose HP-Tacotron2, a multi-task framework including a hierarchical prosodic break predictor and a mel-spectrogram generator tosolve the above problem. We treat the prosodic break label asthe additional conditioning feature and concatenate it with the encoder’s output to form a joint vector for the melspectrogram generation task. By multi-task learning strategy, not only the prediction performance of the prosody model canbe improved but also makes the synthesized audio more natural. Experiments conducted on a corpus publicly available show that the proposed method outperforms theother representative methods up to date.
   </p>
   <p><b>Intex Term</b> —— end-to-end,phrase break, HP-Tacotron2, multi-task</p>
 </div>
@@ -179,7 +179,7 @@ img {
 	  </tbody></table>
 	  
 	  <hr>
-	  <p style="font-size: 22px">交公粮#3，我把#1最好的#1小麦#2、玉米#2送到#1粮管所#4。</p>
+	  <p style="font-size: 22px">傍晚#2七个#1小人#1回来了#3，白雪#1公主说#3：你们#1就是#1我#1命中的#1七个#1小矮人吧#4。</p>
 
 	  <table><thead>
 	  <tr>
@@ -191,12 +191,12 @@ img {
 	  <th style="text-align: center">GTA</th>
 	  </tr></thead><tbody>
 	  <tr>
-		<td style="text-align: center"><audio controls="controls" ><source src="./B/wavs/009870.wav" autoplay/></audio></td>
-		<td style="text-align: center"><audio controls="controls" ><source src="./C/wavs/009870.wav" autoplay/></audio></td>
-		<td style="text-align: center"><audio controls="controls" ><source src="./FP/wavs/009870.wav" autoplay/></audio></td>
-		<td style="text-align: center"><audio controls="controls" ><source src="./PP/wavs/009870.wav" autoplay/></audio></td>
-		<td style="text-align: center"><audio controls="controls" ><source src="./HP/wavs/009870.wav" autoplay/></audio></td>
-		<td style="text-align: center"><audio controls="controls" ><source src="./GTA/audio_24k/009870.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./B/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./C/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./FP/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./PP/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./HP/wavs/009920.wav" autoplay/></audio></td>
+		<td style="text-align: center"><audio controls="controls" ><source src="./GTA/audio_24k/009920.wav" autoplay/></audio></td>
 	  </tr>
 	  </tbody></table>
 	  
